@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+  background-color: #ecf0f3;
+  transition: all 0.5s ease;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf0f3;
+}
+
+.calc {
+  box-shadow: 6px 6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, 0.5);
+  border-radius: 28px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 66px);
+}
+
+.theme-toggler {
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+  grid-column: span 4;
+  padding: 5px 15px 0 0;
+  z-index: 1;
+  background-color: transparent;
+}
+
+i {
+  border: 1px solid yellowgreen;
+  height: 30px;
+  width: 30px;
+  padding-top: 6px;
+  text-align: center;
+  border-radius: 50%;
+  color: yellowgreen;
+  box-shadow: 2px 2px 4px #fff, 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: #333;
+}
+
+.theme-toggler.active i {
+  background-color: #fff;
+}
+
+input {
+  grid-column: span 4;
+  height: 68px;
+  width: 258px;
+  box-shadow: inset -6px -6px 13px #fff, inset 6px 6px 13px rgba(0, 0, 0, 0.16);
+  background-color: #ecf0f3;
+  border: none;
+  border-radius: 32px;
+  color: rgb(26, 25, 25);
+  text-align: end;
+  margin: 40px 0px 30px 0px;
+  padding: 20px;
+  font-size: 40px;
+}
+
+button {
+  box-shadow: inset 6px 6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, 0.16);
+  background-color: #ecf0f3;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.equal {
+  width: 120px;
+  border-radius: 42px;
+  box-shadow: inset 6px 6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, 0.16);
+}
+
+/* Light mode */
+
+.calc button.btn-number {
+  background-color: #c3eaff;
+}
+
+.calc button.btn-operator {
+  background-color: #ffd0fd;
+  color: #f967f3;
+}
+
+.calc button.equal {
+  background-color: #adf9e7;
+}
+
+/* dark them */
+.calc.dark {
+  background-color: #2d191e;
+}
+
+.calc.dark button.btn-number {
+  background-color: #1b2f38;
+  color: #f8fafb;
+}
+
+.calc.dark button.btn-operator {
+  background-color: #2e1f39;
+  color: #aa00a4;
+}
+
+.calc button.equal {
+  background-color: #223323;
+  color: #f8fafb;
+}

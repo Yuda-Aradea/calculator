@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc">
+        <div class="theme-toggler">
+          <i class="fa-regular fa-moon"></i>
+        </div>
+        <input type="text" id="inputtext" placeholder="0" readonly />
+        <button onclick="clr()" class="btn-operator">C</button>
+        <button onclick="del()">DEL</button>
+        <button onclick="calculate('%')" class="btn-operator">%</button>
+        <button onclick="calculate('/')" class="btn-operator">/</button>
+        <button onclick="calculate(7)" class="btn-number">7</button>
+        <button onclick="calculate(8)" class="btn-number">8</button>
+        <button onclick="calculate(9)" class="btn-number">9</button>
+        <button onclick="calculate('*')" class="btn-operator">*</button>
+        <button onclick="calculate(4)" class="btn-number">4</button>
+        <button onclick="calculate(5)" class="btn-number">5</button>
+        <button onclick="calculate(6)" class="btn-number">6</button>
+        <button onclick="calculate('-')" class="btn-operator">-</button>
+        <button onclick="calculate(1)" class="btn-number">1</button>
+        <button onclick="calculate(2)" class="btn-number">2</button>
+        <button onclick="calculate(3)" class="btn-number">3</button>
+        <button onclick="calculate('+')" class="btn-operator">+</button>
+        <button onclick="calculate('.')" class="btn-operator">.</button>
+        <button onclick="calculate(0)" class="btn-number">0</button>
+        <button onclick="Result()" class="equal">=</button>
+      </div>
+    </div>
+    <script src="style.js"></script>
+  </body>
+</html>
